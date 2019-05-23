@@ -1,0 +1,73 @@
+.Name-tag_holder {
+  display: block;
+}
+
+.Name-tag_container {
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 20px;
+  width: 25%;
+}
+
+.Name-tag_greeting {
+  border-top-left-radius: $borderRadius;
+  border-top-right-radius: $borderRadius;
+  font-size: 30px;
+  height: 50px;
+  user-select: none;
+}
+
+.Name-tag_person {
+  background-color: white;
+  color: black;
+  font-size: 50px;
+  user-select: none;
+}
+
+.Name-tag_bottom {
+  border-bottom-left-radius: $borderRadius;
+  border-bottom-right-radius: $borderRadius;
+  height: 20px;
+}
+
+.Name-tag_greeting1 {
+  @extend .Name-tag_greeting;
+  background-color: $red;
+}
+
+.Name-tag_bottom1 {
+  @extend .Name-tag_bottom;
+  background-color: $red;
+}
+
+.Name-tag_greeting2 {
+  @extend .Name-tag_greeting;
+  background-color: $blue;
+}
+
+.Name-tag_bottom2 {
+  @extend .Name-tag_bottom;
+  background-color: $blue;
+}
+
+.Name-tag_greeting3 {
+  @extend .Name-tag_greeting;
+  background-color: $green;
+}
+
+.Name-tag_bottom3 {
+  @extend .Name-tag_bottom;
+  background-color: $green;
+}
+
+.Name-tag_greeting4 {
+  @extend .Name-tag_greeting;
+  background-color: $yellow;
+}
+
+.Name-tag_bottom4 {
+  @extend .Name-tag_bottom;
+  background-color: $yellow;
+}
