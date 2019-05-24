@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = env => {
-  const typeLoader = env.TYPE === "redux" ? "./src/reduxApp.js" : "./src/contextApp.js";
+  const typeLoader = env.TYPE === "context" ? "./src/contextApp.js" : "./src/reduxApp.js";
 
   return {
     entry: [
