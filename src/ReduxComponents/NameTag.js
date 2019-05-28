@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NameTag = ({ name, language }) => {
+export const NameTag = ({ name, language }) => {
   const [color, updateColor] = useState(1);
 
   const changeColor = () => {

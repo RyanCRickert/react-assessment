@@ -3,12 +3,12 @@ const webpack = require("webpack");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = env => {
-  const typeLoader = env.TYPE === "context" ? "./src/contextApp.js" : "./src/reduxApp.js";
+  const type = env.TYPE === "context" ? "context" : "redux";
 
   return {
     entry: [
       "@babel/polyfill",
-      typeLoader
+      `./src/${type}App.js`
     ],
     output: {
       path: path.join(__dirname, "public", "dist"),

@@ -1,19 +1,36 @@
 import React from 'react';
 import { connect } from "react-redux";
 import { changeLanguage } from "./actions/options";
+import { changeNames } from "./actions/names";
 
-export class LanguageSelector extends React.Component {
-  onLanguageChange = (e) => {
-    this.props.changeLanguage(e.target.value);
+export const LanguageSelector = props => {
+  const onLanguageChange = (e) => {
+    props.changeLanguage(e.target.value);
   }
 
-  render() {
-    return (
-      <div>
-        <select
-        className="App-language_selector"
-        onChange={this.onLanguageChange}
-        value={this.props.language}
+  const generateNames = () => {
+    const namesArray = [];
+    fetch("https://uinames.com/api/?amount=8&region=united+states")
+      .then(res => {
+        return res.json()
+      })
+      .then(data => {
+        data.forEach(entry => {
+          namesArray.push(entry.name)
+        })
+
+        return props.changeNames(namesArray.join("\n"))
+      }).catch(err => {
+        alert("API can sometimes be a bit difficult and blocks calls, please try again.");
+      })
+  }
+
+  return (
+    <div className="options-container">
+      <select
+      className="App-language_selector"
+      onChange={onLanguageChange}
+      value={props.language}
       >
         <option>English</option>
         <option>Spanish</option>
@@ -21,9 +38,9 @@ export class LanguageSelector extends React.Component {
         <option>German</option>
         <option>Korean</option>
       </select>
+      <button className="generator-button" onClick={generateNames}>Generate Names</button>
     </div>
-    );
-  }
+  )
 }
 
 const mapStateToProps = (state) => ({
@@ -31,7 +48,8 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  changeLanguage: (language) => dispatch(changeLanguage(language))
+  changeLanguage: language => dispatch(changeLanguage(language)),
+  changeNames: names => dispatch(changeNames(names))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(LanguageSelector);
