@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render NameTag with a name 1`] = `
+<div
+  className="Name-tag_container"
+  onClick={[Function]}
+>
+  <div
+    className="Name-tag_greeting1"
+  />
+  <div
+    className="Name-tag_person"
+  />
+  <div
+    className="Name-tag_bottom1"
+  />
+</div>
+`;

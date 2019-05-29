@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle changing of language 1`] = `
+<div
+  className="options-container"
+>
+  <select
+    className="App-language_selector"
+    onChange={[Function]}
+  >
+    <option>
+      English
+    </option>
+    <option>
+      Spanish
+    </option>
+    <option>
+      French
+    </option>
+    <option>
+      German
+    </option>
+    <option>
+      Korean
+    </option>
+  </select>
+  <button
+    className="generator-button"
+    onClick={[Function]}
+  >
+    Generate Names
+  </button>
+</div>
+`;
+
+exports[`should handle changing of language 2`] = `
+<div
+  className="options-container"
+>
+  <select
+    className="App-language_selector"
+    onChange={[Function]}
+  >
+    <option>
+      English
+    </option>
+    <option>
+      Spanish
+    </option>
+    <option>
+      French
+    </option>
+    <option>
+      German
+    </option>
+    <option>
+      Korean
+    </option>
+  </select>
+  <button
+    className="generator-button"
+    onClick={[Function]}
+  >
+    Generate Names
+  </button>
+</div>
+`;
+
+exports[`should render LanguageSelector 1`] = `
+<div
+  className="options-container"
+>
+  <select
+    className="App-language_selector"
+    onChange={[Function]}
+  >
+    <option>
+      English
+    </option>
+    <option>
+      Spanish
+    </option>
+    <option>
+      French
+    </option>
+    <option>
+      German
+    </option>
+    <option>
+      Korean
+    </option>
+  </select>
+  <button
+    className="generator-button"
+    onClick={[Function]}
+  >
+    Generate Names
+  </button>
+</div>
+`;

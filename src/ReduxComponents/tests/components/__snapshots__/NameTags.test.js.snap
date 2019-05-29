@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render NameTags with names 1`] = `
+<div
+  className="Name-tag_holder"
+>
+  <NameTag
+    key="0"
+    name="Ray"
+  />
+  <NameTag
+    key="1"
+    name="Jay"
+  />
+  <NameTag
+    key="2"
+    name="Kay"
+  />
+  <NameTag
+    key="3"
+    name="May"
+  />
+  <NameTag
+    key="4"
+    name="Fay"
+  />
+</div>
+`;

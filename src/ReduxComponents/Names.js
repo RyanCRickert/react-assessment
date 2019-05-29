@@ -11,7 +11,6 @@ export class Names extends React.Component {
     return (
       <textarea
       onChange={this.onNamesChange}
-      value={this.props.names.names}
       className="App-name_input"
       />
      )

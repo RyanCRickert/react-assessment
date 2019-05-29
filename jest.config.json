@@ -1,5 +1,9 @@
 {
   "setupFiles": [
+    "raf/polyfill",
     "<rootDir>/src/ReduxComponents/tests/setupTests.js"
+  ],
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer"
   ]
 }
