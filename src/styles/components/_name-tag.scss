@@ -9,6 +9,19 @@
   overflow: hidden;
   padding: 20px;
   width: 25%;
+
+  @media (max-width: 1200px) {
+    width: 33%;
+  }
+
+  @media (max-width: 1000px) {
+    width: 50%;
+  }
+
+  @media (max-width: 700px) {
+    padding: 20px 15%;
+    width: 100%;
+  }
 }
 
 .Name-tag_greeting {

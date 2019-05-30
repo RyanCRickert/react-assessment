@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start-context": "webpack-dev-server --env.TYPE=context",
-    "start": "webpack-dev-server --env.TYPE=redux",
+    "start-context": "webpack-dev-server --hot --env.TYPE=context",
+    "start": "webpack-dev-server --hot --env.TYPE=redux",
     "test": "jest --config=jest.config.json"
   },
   "license": "MIT",
@@ -28,6 +28,7 @@
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
     "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1"
   },
